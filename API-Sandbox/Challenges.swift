@@ -158,5 +158,5 @@ internal func exerciseThree() {
     {
         print(film.name)
     }
-    
+ print(allMovies.filter({$0.releaseDate.contains("2016")}))
 }
