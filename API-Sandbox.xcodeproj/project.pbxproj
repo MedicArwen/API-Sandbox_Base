@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		21B4F79288F5023418E51F9C /* Pods_API_Sandbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA943B06F3E27CF903CAD43F /* Pods_API_Sandbox.framework */; };
 		BC7C84541D1D488300BA19ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7C84531D1D488300BA19ED /* AppDelegate.swift */; };
-		BC7C84561D1D488300BA19ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7C84551D1D488300BA19ED /* ViewController.swift */; };
+		BC7C84561D1D488300BA19ED /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7C84551D1D488300BA19ED /* DetailVC.swift */; };
 		BC7C84591D1D488300BA19ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC7C84571D1D488300BA19ED /* Main.storyboard */; };
 		BC7C845B1D1D488300BA19ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC7C845A1D1D488300BA19ED /* Assets.xcassets */; };
 		BC7C845E1D1D488300BA19ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC7C845C1D1D488300BA19ED /* LaunchScreen.storyboard */; };
@@ -17,6 +17,8 @@
 		BC7C84691D1D677800BA19ED /* Random-User.json in Resources */ = {isa = PBXBuildFile; fileRef = BC7C84671D1D677800BA19ED /* Random-User.json */; };
 		BC7C846B1D20C2B000BA19ED /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7C846A1D20C2B000BA19ED /* Movie.swift */; };
 		BC7C846D1D20CEEB00BA19ED /* Challenges.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7C846C1D20CEEB00BA19ED /* Challenges.swift */; };
+		FC74B07B21F87985001095C3 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC74B07A21F87985001095C3 /* MovieCell.swift */; };
+		FC74B07D21F87F50001095C3 /* MoviesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC74B07C21F87F4F001095C3 /* MoviesListVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +26,7 @@
 		AA943B06F3E27CF903CAD43F /* Pods_API_Sandbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_API_Sandbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC7C84501D1D488300BA19ED /* API-Sandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "API-Sandbox.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC7C84531D1D488300BA19ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BC7C84551D1D488300BA19ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BC7C84551D1D488300BA19ED /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		BC7C84581D1D488300BA19ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BC7C845A1D1D488300BA19ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC7C845D1D1D488300BA19ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -34,6 +36,8 @@
 		BC7C846A1D20C2B000BA19ED /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		BC7C846C1D20CEEB00BA19ED /* Challenges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Challenges.swift; sourceTree = "<group>"; };
 		BE6F9BF20D7BFD90E54D152E /* Pods-API-Sandbox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-API-Sandbox.release.xcconfig"; path = "Pods/Target Support Files/Pods-API-Sandbox/Pods-API-Sandbox.release.xcconfig"; sourceTree = "<group>"; };
+		FC74B07A21F87985001095C3 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		FC74B07C21F87F4F001095C3 /* MoviesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +72,8 @@
 		91756E211FBAE6B900E05DD5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				BC7C84551D1D488300BA19ED /* ViewController.swift */,
+				BC7C84551D1D488300BA19ED /* DetailVC.swift */,
+				FC74B07C21F87F4F001095C3 /* MoviesListVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -102,6 +107,7 @@
 		BC7C84521D1D488300BA19ED /* API-Sandbox */ = {
 			isa = PBXGroup;
 			children = (
+				FC74B07921F87952001095C3 /* Views */,
 				BC7C84571D1D488300BA19ED /* Main.storyboard */,
 				BC7C846C1D20CEEB00BA19ED /* Challenges.swift */,
 				91756E211FBAE6B900E05DD5 /* Controllers */,
@@ -130,6 +136,14 @@
 				BE6F9BF20D7BFD90E54D152E /* Pods-API-Sandbox.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		FC74B07921F87952001095C3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FC74B07A21F87985001095C3 /* MovieCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,9 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC7C84561D1D488300BA19ED /* ViewController.swift in Sources */,
+				BC7C84561D1D488300BA19ED /* DetailVC.swift in Sources */,
 				BC7C846D1D20CEEB00BA19ED /* Challenges.swift in Sources */,
 				BC7C84541D1D488300BA19ED /* AppDelegate.swift in Sources */,
+				FC74B07D21F87F50001095C3 /* MoviesListVC.swift in Sources */,
+				FC74B07B21F87985001095C3 /* MovieCell.swift in Sources */,
 				BC7C846B1D20C2B000BA19ED /* Movie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

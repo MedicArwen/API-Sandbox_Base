@@ -12,7 +12,7 @@ import Alamofire
 import AlamofireImage
 import AlamofireNetworkActivityIndicator
 
-class ViewController: UIViewController {
+class DetailVC: UIViewController {
 
     @IBOutlet weak var movieTitleLabel: UILabel!
     @IBOutlet weak var rightsOwnerLabel: UILabel!
@@ -26,9 +26,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        exerciseOne()
-        exerciseTwo()
-        exerciseThree()
+//        exerciseOne()
+//        exerciseTwo()
+//        exerciseThree()
     
     }
 
@@ -38,7 +38,7 @@ class ViewController: UIViewController {
         rightsOwnerLabel.text = movie.rightsOwner
         releaseDateLabel.text = movie.releaseDate
         priceLabel.text = "\(String(describing: movie.price))"
-        loadPoster(urlString: movie.link)
+        loadPoster(urlString: movie.posterImageURL)
     }
     
     // Updates the image view when passed a url string
@@ -46,8 +46,8 @@ class ViewController: UIViewController {
         posterImageView.af_setImage(withURL: URL(string: urlString)!)
     }
     
-    @IBAction func viewOniTunesPressed(_ sender: AnyObject) {
-        
+    @IBAction func viewOniTunesPressed(_ sender: UIButton) {
+        UIApplication.shared.open(URL(string: movie!.link)!, options: [:], completionHandler: nil)
     }
     
 }
